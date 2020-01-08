@@ -6,14 +6,18 @@
     "@material-ui/core": "latest",
     "@material-ui/icons": "^4.5.1",
     "clsx": "latest",
+    "express": "^4.17.1",
     "next": "latest",
     "prop-types": "latest",
     "react": "latest",
     "react-dom": "latest"
   },
   "scripts": {
-    "dev": "next -p 4000",
+    "dev": "nodemon server/index.js",
     "build": "next build",
-    "start": "next start"
+    "start": "NODE_ENV=production node server/index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
   }
 }
